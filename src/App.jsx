@@ -5,7 +5,7 @@ import NewItem from "./components/NewItem/NewItem";
 
 const App = () => {
   return (
-    <div className="page">
+    <div>
       <div>
         <h1> CheckList </h1>
         <NewItem />
