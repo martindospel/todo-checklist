@@ -5,9 +5,9 @@ import NewItem from "./components/NewItem/NewItem";
 
 const App = () => {
   return (
-    <div>
-      <div>
-        <h1> CheckList </h1>
+    <div className="app">
+      <div className="app-header">
+        <h1 className="app-heading"> What needs to get done? </h1>
         <NewItem />
       </div>
       <CheckList />

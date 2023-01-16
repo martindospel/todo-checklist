@@ -1,0 +1,48 @@
+.userinput {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: none;
+  width: 100%;
+  font-size: 14px;
+  align-items: center;
+}
+
+.textbox {
+  width: 80%;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(4, 4, 4);
+  font-size: 130%;
+  transition: 0.3s;
+  border-radius: 1em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.submititem {
+  width: 10%;
+  height: 40px;
+  background-color: rgb(72, 206, 35);
+  color: white;
+  font-size: 130%;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 1em;
+  margin-top: 1em;
+}
+
+.submititem:hover {
+  background-color: rgb(18, 86, 11);
+}
+
+.textbox:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+@media only screen and (max-width: 768px) {
+  .submititem {
+    font-size: 100%;
+    width: 50%;
+  }
+}
