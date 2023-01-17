@@ -16,10 +16,10 @@ const CheckList = () => {
         return (
           <Item
             item={item}
-            key={item.uuid}
-            id={item.uuid}
-            title={item.itemName}
-            completed={item.itemStatus}
+            key={item.itemName}
+            uuid={item.uuid}
+            itemName={item.itemName}
+            itemStatus={item.itemStatus}
           />
         );
       })}
