@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className="app">
       <div className="app-header">
-        <h1 className="app-heading"> What needs to get done? </h1>
+        <h1 className="app-heading"> What needs to get done.. </h1>
         <NewItem />
       </div>
       <CheckList />
