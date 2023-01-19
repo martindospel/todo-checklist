@@ -5,18 +5,17 @@ import "./CheckList.css";
 
 const CheckList = () => {
   const items = useSelector((state) => state.items);
-
   useEffect(() => {
-    localStorage.setItem("items", JSON.stringify(items));
+    localStorage.setItem("item", JSON.stringify(items));
   }, [items]);
 
   return (
     <div className="items">
-      {items?.map((item) => {
+      {items.map((item) => {
         return (
           <Item
             item={item}
-            key={item.itemName}
+            key={item.uuid}
             uuid={item.uuid}
             itemName={item.itemName}
             itemStatus={item.itemStatus}

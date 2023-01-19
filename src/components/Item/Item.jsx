@@ -4,7 +4,7 @@ import "./Item.css";
 import { useDispatch } from "react-redux";
 import { itemToggle, itemDelete } from "../../state/slices";
 
-const Item = (uuid, itemName, itemStatus) => {
+const Item = ({ uuid, itemName, itemStatus }) => {
   const dispatch = useDispatch();
 
   const handleStatus = () => {
@@ -16,13 +16,14 @@ const Item = (uuid, itemName, itemStatus) => {
   };
 
   return (
-    <div className={"todo__item" + (itemStatus ? " todo--completed" : "")}>
-      <div className="todo--toggle-completed" onClick={handleStatus}>
-        {itemName}
-      </div>
+    <div
+      className={"item" + (itemStatus ? " item-done" : "")}
+      onClick={handleStatus}
+    >
+      <div>{itemName}</div>
       {itemStatus && (
-        <button className="todo__button--remove" onClick={handleDelete}>
-          Remove
+        <button className="item-delete" onClick={handleDelete}>
+          Delete
         </button>
       )}
     </div>

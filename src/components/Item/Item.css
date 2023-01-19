@@ -1,51 +1,55 @@
-.todo__button--remove {
-    position: absolute;
-    right: 1em;
-    bottom: 1em;
-    height: 2em;
-    background-color: #ca453c;
-    color: white;
-    border: none;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 1em
-  }
-  
-  .todo__button--remove:hover {
-    background-color: rgb(61, 60, 60);
-    color: white;
-    cursor: pointer;
-  }
-  
-  .todo__item {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    background-color: rgb(132, 209, 129);
-    transition: 0.2s;
-    border-radius: 0.5em;
-    margin: 0.2em 0;
-    font-size: 2.2em;
-    order: 1;
-    user-select: none;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
-  .todo__item:hover {
-    background-color: rgb(133, 186, 131);
-    transition: 0.2s;
-  }
-  
-  .todo--completed {
-    background-color: rgb(183, 177, 177);
-    color: #fff;
-    text-decoration: line-through;
-    order: 2;
-  }
-  
-  .todo--completed:hover {
-    background-color: rgb(140, 136, 136);
-    transition: 0.2s;
-  }
+.item {
+  position: relative;
+  order: 1;
+
+  background-color: #66b3cb;
+  margin: 4px 0;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-size: 2.2em;
+  transition: 0.3s;
+
+  overflow: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: rgb(43, 157, 140);
+  transition: 0.3s;
+}
+
+.item-done {
+  order: 2;
+  background-color: rgb(79, 115, 118);
+  color: rgb(196, 196, 196);
+  text-decoration: line-through;
+}
+
+.item-done:hover {
+  background-color: rgb(39, 79, 78);
+  transition: 0.3s;
+}
+
+.item-delete {
+  position: absolute;
+
+  border: none;
+  background-color: #ff1100;
+  color: white;
+  height: 30px;
+  width: 60px;
+  right: 1em;
+  bottom: 1em;
+  border-radius: 10%;
+  transition: 0.3s;
+
+  cursor: pointer;
+}
+
+.item-delete:hover {
+  background-color: rgb(174, 15, 15);
+  color: white;
+  cursor: pointer;
+}
