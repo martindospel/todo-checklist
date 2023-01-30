@@ -1,4 +1,4 @@
-# Todo Checklist app
+# Todo app
 
 Check it out here --> [Todo App](https://todo-app-martindospel.vercel.app/)
 
